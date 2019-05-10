@@ -1,0 +1,46 @@
+
+\usepackage[T1]{fontenc} %acentos en español
+\usepackage[utf8]{inputenc} 
+\usepackage[spanish]{babel} %para colocar documento en español
+\usepackage{bm} %para colocar negritas
+\usepackage{float} %situar figuras en las partes que quiera
+\usepackage{subfigure} %para colocar varias figuras
+\usepackage{titling} %para dar formato a titulo
+\usepackage{titlesec}
+\usepackage{natbib} %para bibliografías
+\usepackage{parskip} %para espacio en blanco despues de un parrafo
+\usepackage{graphicx} %para gráficos y figuras
+\graphicspath{imagenes/} %direccion carpeta imagenes
+\usepackage{fancyhdr} %para encabezado y pie de pagina
+\usepackage{vmargin}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\usepackage[natbibapa]{apacite}
+%\usepackage{apacite}
+
+%parteexperimental
+\usepackage{natbib}
+\usepackage{url}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Ionic Framework}
+\author{Boris Nilo Moreno}
+\date{9 de mayo de 2019}
+
+\makeatletter
+\let\eltitulo\@title
+\let\elautor\@author
+\let\lafecha\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[scale =0.4 ]{imagenes/Logo_DuocUC.png}}
+\lhead{\eltitulo}
+\cfoot{\thepage}
+
+%Para agregar referencias al indice 
+\let\OLDthebibliography=\thebibliography
+\def\thebibliography#1{\OLDthebibliography{#1}%
+\addcontentsline{toc}{section}{\refname}}
+

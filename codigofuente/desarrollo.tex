@@ -1,0 +1,42 @@
+\section{Desarrollo}
+
+\subsection{Información previa}
+El conocimiento generado entorno a las diferentes áreas del saber conlleva el uso de ciertos tecnicismos. Esto simplifica la comunicación de ideas dentro del campo por lo que, antes de explicar qué es Ionic, se definirán algunos conceptos clave. 
+
+Un Framework en el área de la informática es una estructura compuesta de elementos personalizables e intercambiables que se establecen para desarrollar un software. Además, tiene por objetivo acelerar el proceso de desarrollo, reutilizar código escrito en algún lenguaje de programación y promover buenas prácticas, como el uso de patrones de código.
+
+ En el desarrollo de software se pueden identificar 2 áreas. La primera de ellas es la parte Frontend, que se enfoca en todo lo que el usuario ve y con lo que interacciona, por ejemplo, un formulario web. La segunda, corresponde a Backend, que trata con todo lo que sucede detrás de una página web (como se envían los datos de un formulario web). En el Frontend, la estructura de una página se trabaja con HTML, que es un lenguaje de etiquetas con la cual se arma la base, CSS se encarga de dar forma al diseño gráfico (márgenes, colores, formas, animaciones) y Javascript configura la lógica. Así, la unión de estos 3 elementos conforman la base de todo portal. Se debe agregar que hay páginas estáticas y dinámicas, siendo las dinámicas de mayor interés, ya que se genera automáticamente contenido en el momento que alguien solicita su visualización. En la parte de Backend, es importante mencionar que la relación entre páginas webs o aplicaciones se realizan mediante una API (Application Programming Interface) que establece reglas y especificaciones para la comunicación entre ellas. Por otra parte, un Plugin es una aplicación que añade funcionalidad adicional o una nueva característica al software, en otras palabras, un complemento.
+
+
+
+\subsection{¿Qué es Ionic?}
+
+Ionic frameworks es una herramienta frontend para desarrollar interfaces de usuario(UI) de alta calidad y rendimiento para aplicaciones móviles y de escritorio. Utiliza una serie de tecnologías web (Html, CSS, y Javascript) como se define en su sitio \citep{ionicFramework}. Además, se enfoca en la interacción del usuario con la  UI de una aplicación (controles, gestos, animaciones). Es fácil de aprender y se integra bien con otras librerías o frameworks como Angular, o bien usada por sí sola. Si se siguen bien sus lineamientos, las aplicaciones funcionarán como si fuera una aplicación nativa. Por otra parte, al ser Ionic de código libre, permite a los desarrolladores construir y publicar sus aplicaciones en la playstore de Android o app store de Apple sin ningún costo.
+
+En la página oficial de Ionic, se puede encontrar la documentación donde explica todos sus componentes y el código de estos, con la ventaja de poder copiar y pegar sobre la plantilla HTML que se disponga. Por otra parte, para aquellos usuarios con habilidades limitadas de programación, existe Ionic Creator, el cual es una interfaz que permite arrastrar y soltar elementos (botones, cajas de texto, seleccionadores) de una lista, en forma visual para diseñar aplicaciones y probarlas en un navegador. 
+
+\subsection{¿Cómo funciona?}
+Ionic Framework esta construido sobre el  framework AngularJS y utiliza Apache Cordova, para construir aplicaciones desde un contenedor web. A continuación se explica como funciona esto.
+
+Una aplicación híbrida está basada en un componente nativo llamado WebView, el cual no es más que un navegador web, sin ningún elemento de interfaz de usuario presente en todos los sistemas operativos. Este componente carga localmente contenido web, como una página HTML, archivos CSS y código Javascript. Además, HTML5 y CSS3 poseen capacidad para desarrollar  elementos adaptables, por lo cual pueden ajustarse a cualquier tamaño de pantalla sin problemas \citep*{Khanna:2017:IHM:3161211}. Ahora bien, una aplicación web no tiene acceso a características de hardware o software en el dispositivo, como por ejemplo la base de datos de contactos de un teléfono. Sin embargo, Apache Cordova, además de proveer un framework que permite  correr una web app dentro de una aplicación nativa (WebView), proporciona JavaScript APIs, que permiten acceder a una gran variedad de características del dispositivo, como la lista de números telefónicos. Estas capacidades se exponen mediante una colección de plugins. Los plugins funcionan como un puente entre una aplicación web y las características nativas de un teléfono \citep{cordova}.
+
+A continuación, para crear una interfaz de usuario web es necesario utilizar HTML5, CSS y JS (Javascript). Sin embargo, no se escribe todo el código en un solo archivo, es necesario separarlo de forma correcta. Para ello existe un patrón de arquitectura de software denominado Modelo-Vista (MV), que separa los datos y la lógica de una aplicación, de su representación, permitiendo así a un equipo de desarrolladores, separar el trabajo en áreas de código, por ejemplo la vista en HTML, el estilo en CSS y la lógica y comunicaciones en JS.  Ionic utiliza un framework Modelo-Vista de código libre, llamado AngularJS, para construir una estructura sólida y compleja de una web app. También provee un camino para crear componentes reusables, configurar plantillas HTML y lógica con la habilidad de cargar datos dinámicos (paginas dinámicas) \citep*{Khanna:2017:IHM:3161211}.
+
+
+\subsection{Pro y contras de Ionic }
+
+Las ventajas de Ionic son \citep{IonicEbook}:
+\begin{itemize}
+    \item “Escríbelo una vez, córrelo donde sea”. Esto hace referencia al lema de una app híbridad construida con Ionic. Una vez creada, funciona en distintas plataformas, en contraposición de una nativa, la cual requiere especialistas en el lenguaje respectivo al SO, para hacer la conversión.
+    \item 	En las empresas hay programadores que entienden HTML, CSS y Javascript, lo que hace que aprender Ionic para ellos sea más fácil que aprender un lenguaje nativo como Objetive-C o Java.
+    \item Disminución de costos y tiempo de desarrollo. No es necesaria la contratación o entrenamiento de personal especialista en lenguajes nativos.
+    \item La comunidad de desarrolladores web, es más grande que la de desarrolladores nativos, lo que ayuda bastante a la hora de resolver dudas que se presenten, buscando en foros.
+\end{itemize}
+Las desventajas son las siguientes:
+\begin{itemize}
+    \item Mayor consumo de recursos. El uso de webview, puede provocar la utilización de más recursos del sistema que una app nativa, con la consecuente pérdida de velocidad. Sin embargo, el avance en poder de los dispositivos hace que esto sea cada vez menos notorio.
+    \item Plugins de terceros. Las apps de Ionic pueden acceder a casi todas las características del teléfono gracias a estos complementos. No obstante, esto agrega mayor complejidad que muchos consideran problemático.
+    \item 	El código nativo sigue siendo más rápido que JavaScript o HTML. Esto toma mayor relevancia a la hora de crear juegos con alta demanda gráfica o animaciones intensivas.
+\end{itemize}
+
+
